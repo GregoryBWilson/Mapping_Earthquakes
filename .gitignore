@@ -1,3 +1,5 @@
+# config.js contain an API_KEY that we don't want explosed to the public
+config.js
 # Compiled class file
 *.class
 
