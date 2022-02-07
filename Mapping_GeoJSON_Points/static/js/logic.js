@@ -156,15 +156,14 @@ let airportData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Eart
 //////////////////////// d3.json() Method Start ///////////////////////////////////
 
 // Grabbing our GeoJSON data.
-d3.json(airportData).then(function(data) {
-  console.log(data);
-// Creating a GeoJSON layer with the retrieved data.
-L.geoJSON(data).addTo(map);
-});
+// d3.json(airportData).then(function(data) {
+//   console.log(data);
+// // Creating a GeoJSON layer with the retrieved data.
+// L.geoJSON(data).addTo(map);
+// });
 
 //////////////////////// d3.json() Method End ///////////////////////////////////
-// GeoJSON.js:221 Uncaught Error: Invalid GeoJSON object. see line 169//
-
+//////////////////////// d3.json() Method Start ///////////////////////////////////
 // Grabbing our GeoJSON data.
 d3.json(airportData).then(function(data) {L.geoJSON(data, {
   onEachFeature: function(_feature, layer) {
@@ -185,3 +184,4 @@ d3.json(airportData).then(function(data) {L.geoJSON(data, {
 }
 }).addTo(map);
 })
+//////////////////////// d3.json() Method End ///////////////////////////////////
