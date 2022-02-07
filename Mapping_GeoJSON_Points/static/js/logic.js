@@ -166,10 +166,22 @@ L.geoJSON(data).addTo(map);
 // GeoJSON.js:221 Uncaught Error: Invalid GeoJSON object. see line 169//
 
 // Grabbing our GeoJSON data.
-L.geoJSON(airportData, {
+d3.json(airportData).then(function(data) {L.geoJSON(data, {
   onEachFeature: function(_feature, layer) {
-    // console.log(`_feature = `,_feature);
-    // console.log(`layer = `,layer);
-    layer.bindPopup();
+    console.log(`_feature = `,_feature);
+    console.log(`layer = `,layer);
+    return layer.bindPopup("<h2>Airport code: " + _feature.properties.faa + "<br>_____________________________<br><h2>Airport Name: " + _feature.properties.name);
+    // alt: "10"
+    // city: "Shanghai"
+    // country: "China"
+    // dst: "U"
+    // faa: "SHA"
+    // icao: "ZSSS"
+    // id: "3391"
+    // name: "Shanghai Hongqiao International Airport"
+    // tz: "Asia/Shanghai"
+    // tz-offset: "8" + "</h2>"
+    
 }
 }).addTo(map);
+})
