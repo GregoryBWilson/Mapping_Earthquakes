@@ -89,8 +89,6 @@ d3.json("https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geoj
   }
 
   // Creating a GeoJSON layer with the retrieved data. 
-  
-  https://github.com/fraxen/tectonicplates
   L.geoJson(data, {
     	// We turn each feature into a circleMarker on the map.
     	pointToLayer: function(feature, latlng) {
@@ -142,28 +140,39 @@ legend.onAdd = function() {
   legend.addTo(map);
 
 /////////////////////////////////  works to here ////////////////////////////////////// 
-let tectonicData = "https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json"; 
-// let tectonicData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Earthquakes/main/PB2002_boundaries.json";
+
+// let tectonicData = "https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json"; 
+let tectonicData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Earthquakes/main/PB2002_boundaries.json";
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
   d3.json(tectonicData).then(function(data) {
+    var myStyle = {
+      "color": "#ff0008",
+      "weight": 2,
+      "opacity": 0.65
+    };
     console.log(data);
     // Creating a GeoJSON layer with the retrieved data.
-    L.geoJSON(data).addTo(map);
-});
-    
+    L.geoJSON(data, {
+      style: myStyle
+    }).addTo(map);
+
+    }); 
+
+   
 // Accessing the Toronto airline routes GeoJSON URL.
 let torontoData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Earthquakes/main/torontoRoutes.json";
 // Grabbing our GeoJSON data.
 d3.json(torontoData).then(function(data) {
+  // Create a style for the lines. (This should just be for the next section)
+  var myStyle = {
+    "color": "#ffed00",
+    "weight": 2,
+    "opacity": 0.65
+  }; 
   console.log(data);
 // Creating a GeoJSON layer with the retrieved data.
-L.geoJSON(data).addTo(map);
+L.geoJSON(data, {
+  style: myStyle
+}).addTo(map);
 });
-
-
-// Create a style for the lines. (This should just be for the next section)
-let myStyle = {
-  color: "#ffffa1",
-  weight: 2
-};}
-)
+})
