@@ -30,11 +30,15 @@ let baseMaps = {
 
 // 1. Add a 2nd layer group for the tectonic plate data.
 let allEarthquakes = new L.LayerGroup();
+let allTectonics = new L.LayerGroup();
+let allFlights = new L.LayerGroup();
 
 
 // 2. Add a reference to the tectonic plates group to the overlays object.
 let overlays = {
-  "Earthquakes": allEarthquakes
+  "Tectonic Plates": allTectonics,
+  "Earthquakes": allEarthquakes,
+  "Toronto Flights": allFlights
 };
 
 // Then we add a control to the map that will allow the user to change which
@@ -154,7 +158,9 @@ let tectonicData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Ear
     // Creating a GeoJSON layer with the retrieved data.
     L.geoJSON(data, {
       style: myStyle
-    }).addTo(map);
+    }).addTo(allTectonics);
+    // Then we add the tectonics layer to our map.
+    allTectonics.addTo(map);
 
     }); 
 
@@ -173,6 +179,8 @@ d3.json(torontoData).then(function(data) {
 // Creating a GeoJSON layer with the retrieved data.
 L.geoJSON(data, {
   style: myStyle
-}).addTo(map);
+}).addTo(allFlights);
+// Then we add the tectonics layer to our map.
+allFlights.addTo(map);
 });
 })
