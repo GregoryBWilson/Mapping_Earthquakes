@@ -30,7 +30,11 @@ Demonstrating Proficiency
 
 Your final map should look similar to the following image:
 
-![ All earthquake data  and  tectonic plate data on the map](/Resources/data-13-all-earthquake-data-tectonic-plate-data-on-map.png)
+![ All earthquake data  and  tectonic plate data on the map](/Resources/1-all-earthquake-data-tectonic-plate-data-on-map.png "Figure 1 - All Earthquake Data Tectonic Plate Data on Map")
+
+***Figure 1 - All Earthquake Data Tectonic Plate Data on Map***
+
+
 
 ### Deliverable 1 Requirements
 
@@ -62,7 +66,11 @@ Demonstrating Proficiency
 
 Similar to the following image:
 
-![All earthquakes, major earthquakes, and tectonic plate data on the map](/Resources/data-13-earthquakes-major-earthquakes-tectonic-plate-data-on-the-map.png)
+![All earthquakes, major earthquakes, and tectonic plate data on the map](/Resources/2-earthquakes-major-earthquakes-tectonic-plate-data-on-the-map.png "Figure 2 - Earthquakes Major Earthquakes Tectonic Plate Data on the Map")
+
+***Figure 2 - Earthquakes Major Earthquakes Tectonic Plate Data on the Map***
+
+
 
 ### Deliverable 2 Requirements
 
@@ -105,7 +113,15 @@ Follow the instructions to complete Deliverable 3.
 
 Three map styles, and displays the two earthquake data sets and the tectonic plate data.
 
-![All earthquakes, major earthquakes, and tectonic plate data on the map with three map style options](/Resources/data-13-three-map-style-options.png)
+![All earthquakes, major earthquakes, and tectonic plate data on the map with three map style options](/Resources/3-three-map-style-options.png "Figure 3 - Three Map Style Options")
+
+***Figure 3 - Three Map Style Options***
+
+.
+
+![Just major earthquakes selected on the map with three map style and three layer options](/Resources/4-Just_Major_Earthquakes_Selected.png "Figure 4 - Just Major Earthquakes Selected")
+
+***Figure 4 - Just Major Earthquakes Selected***
 
 ### Deliverable 3 Requirements
 
