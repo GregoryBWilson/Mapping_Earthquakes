@@ -144,8 +144,7 @@ legend.onAdd = function() {
 
 /////////////////////////////////  works to here ////////////////////////////////////// 
 
-// let tectonicData = "https://github.com/fraxen/tectonicplates/blob/master/GeoJSON/PB2002_boundaries.json"; 
-let tectonicData = "https://raw.githubusercontent.com/GregoryBWilson/Mapping_Earthquakes/main/PB2002_boundaries.json";
+let tectonicData = "https://raw.githubusercontent.com/fraxen/tectonicplates/master/GeoJSON/PB2002_boundaries.json";  
   // 3. Use d3.json to make a call to get our Tectonic Plate geoJSON data.
   d3.json(tectonicData).then(function(data) {
     var myStyle = {
