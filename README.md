@@ -2,15 +2,15 @@
 
 ## 1 Purpose
 
-I have just landed a job as a Data Visualization Specialist at the Disaster Reporting Network(DRN), a non-profit company that provides data driven reporting on disasters around the world.  I have been tasked with building insightful visualizations with interactive features on earthquakes from around the world.  I support website and mobile application development using the latest GeoJSON data from the US Geological Survey.  Using JavaScript, D3, Leaflet and MapBox, I have plotted the data in various layers for use by the DRN team members.
+I have just landed a job as a Data Visualization Specialist at the Disaster Reporting Network(DRN), a non-profit company that provides data driven reporting on disasters around the world.  I have been tasked with building insightful visualizations with interactive features on earthquakes from around the world.  I support website and mobile application development, using the latest GeoJSON data from the US Geological Survey.  Using JavaScript, D3, Leaflet and MapBox, I have plotted the data in various layers for use by the DRN team members.
 
 ## 2 Results
 
-The application has been developed in three step that are described in the following sections:
+The application has been developed in three steps that are described in the following sections:
 
 - 2.1 Add Tectonic Plate Data
 - 2.2 Major Earthquake Data
-- 2.3 an Additional Map
+- 2.3 Add an Additional Map
 
 The corresponding HTML and JavaScript files for each step has been saved in the repository as:
 
@@ -20,7 +20,7 @@ The corresponding HTML and JavaScript files for each step has been saved in the 
 
 ### 2.1: Add Tectonic Plate Data
 
-Using JavaScript, Leaflet.js, and geoJSON data, I added tectonic plate data using d3.json().  I also added the data using a geoJSON() layer, and set the tectonic plate LineString data to stand out on the map.  Tectonic plate data was also add to the overlay object with the earthquake data.
+Using JavaScript, Leaflet.js, and geoJSON data, I added tectonic plate data using d3.json().  I also added the data using a geoJSON() layer, and set the tectonic plate LineString data to stand out on the map.  Tectonic plate data was also added to the overlay object with the earthquake data.
 
 In figure 1 below you can see that.
 
@@ -51,7 +51,7 @@ As can be seen in figure 2 below:
 
 - ALL the earthquake data and tectonic plate data are displayed when the page loads.
 
-There was some confusion above the Major Earthquake popups, in the instructions and in the requirements it states that ther should be popups so I included them as in the code fence below.
+There was some confusion above the Major Earthquake popups, in the instructions and in the requirements it states that there should be popups, so I included them as in the code fence below.
 
 ```javascript
      onEachFeature: function(feature, layer) {
@@ -60,7 +60,7 @@ There was some confusion above the Major Earthquake popups, in the instructions 
   }).addTo(majorEarthquakes);
 ```
 
-I the Module 13 Rubric, however, it states "The major earthquake data is added to the map and styled, but there are no popup markers." so in the code field below you can see commenting out the .bindPopup will suppress this feature if so desired (I personally really like the Popups).
+In the Module 13 Rubric, however, it states "The major earthquake data is added to the map and styled, but there are no popup markers." so in the code field below you can see commenting out the .bindPopup will suppress this feature if so desired (I personally really like the Popups).
 
 ```javascript
      onEachFeature: function(feature, layer) {
@@ -119,7 +119,7 @@ let baseMaps = {
 };
 ```
 
-Starting my Python server I launched the index.html file and confirmed that my map was working.  In figure 3 there are three map styles, and displays the two earthquake data sets and the tectonic plate data.
+Starting my Python server I launched the index.html file and confirmed that my map was working.  In figure 3 there are three map styles, and it displays the two earthquake data sets and the tectonic plate data.
 
 ![All earthquakes, major earthquakes, and tectonic plate data on the map with three map style options](/Resources/3-three-map-style-options.png "Figure 3 - Three Map Style Options")
 
@@ -141,10 +141,10 @@ The visualization tools should be of great value to the tean at the Disaster Rep
 - All Earthquake Data
 - Just Major Earthquake Data
 
-The team  is also able to select views on the following MapBox maps:
+The team is also able to select views on the following MapBox maps:
 
 - Streets
 - Satellite
 - Dark
 
-All and all I would say this was a very successful project, including the major learning curve managing numerous branches of code in GitHub.
+All and all, I would say this was a very successful project, including the major learning curve that occurred while managing numerous branches of code in GitHub.
